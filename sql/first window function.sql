@@ -1,6 +1,6 @@
 -- 4.1: Customer revenue and rankings per region
--- Ranking functions (ROW_NUMBER, RANK, DENSE_RANK, PERCENT_RANK)
--- Use case: Top N customers by revenue per region.
+--      Ranking functions (ROW_NUMBER, RANK, DENSE_RANK, PERCENT_RANK)
+--      Use case: Top N customers by revenue per region.
 
 SELECT
   c.region,
