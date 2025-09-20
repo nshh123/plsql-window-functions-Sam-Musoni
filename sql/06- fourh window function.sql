@@ -17,4 +17,6 @@ SELECT
 FROM cust_revenue
 ORDER BY total_revenue DESC;
 
-
+-- Interpretation:
+-- NTILE(4) divides customers into quartiles; the top quartile (4) are high-value customers to target with premium offers. 
+-- CUME_DIST() gives the cumulative distribution percentile useful for selecting thresholds (e.g., top 20% customers for a loyalty program).
