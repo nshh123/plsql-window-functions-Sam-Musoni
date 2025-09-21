@@ -20,7 +20,8 @@ FROM monthly
 ORDER BY month_start;
 
 
--- Interpretation:
--- The cumulative column shows how revenue accumulates over time. 
--- The 3-month moving average smooths month  volatility; e.g., March’s 13,983 average reflects 
--- Jan–Mar smoothing and helps identify whether March is an incremental spike or part of an upward trend.
+-- How it works:
+-- Aggregates sales by month (month_total).
+-- Calculates a cumulative sales total (cumulative_total) — running sum across months.
+-- Computes a 3-month moving average (moving_avg_3m) to smooth fluctuations and show trends.
+-- Outputs results sorted by month.
