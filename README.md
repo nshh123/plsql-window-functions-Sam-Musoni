@@ -8,13 +8,13 @@ Group: D
 
 ## Problem Definition
 
-**Business context**
+**Business context:**
 A regional specialty-coffee retail chain (retail + espresso machine sales) operating in Rwanda. Sales & Marketing needs a compact analytics pipeline to measure product/region performance, detect trends, and segment customers for targeted campaigns.
 
-**Data challenge (2–3 sentences)**
+**Data challenge (2–3 sentences):**
 Sales are recorded as transactions (customer, product, date, amount). The business must identify top products by region & quarter, track running monthly totals and month-over-month growth, compute customer value quartiles for marketing, and smooth short-term volatility with moving averages — all using analytic/window functions.
 
-**Expected outcome**
+**Expected outcome:**
 Actionable insights: top products per region/quarter for merchandising, monthly trend and growth metrics for forecasting, customer quartile segments for targeted promotions, and smoothed 3-month averages to inform inventory and marketing cadence.
 
 ## Success criteria
@@ -128,6 +128,8 @@ NTILE(4) divides customers into quartiles; the top quartile (4) are high-value c
 3. Adding screenshots, tracking and commiting changes: see [screenshot](screenshots/17-added%20screenshots%20to%20local%20repository.png)
 4. Creating README.md: see [screenshot](screenshots/19-create%20README%20file.png)
 5. Previewing README.md: see [screenshot](screenshots/20-previewing%20README%20in%20vscode.png)
+6. Creating GitHub repository: see [screenshot](screenshots/21-create%20GitHub%20repository.png)
+7. Pushing local git repository to GitHub: see [screenshot](screenshots/22-push%20git%20repository%20to%20GitHub.png)
 
 ---
 
