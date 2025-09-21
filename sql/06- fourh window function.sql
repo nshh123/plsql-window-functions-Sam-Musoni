@@ -8,6 +8,12 @@ WITH cust_revenue AS (
   JOIN transactions t ON c.customer_id = t.customer_id
   GROUP BY c.customer_id, c.name
 )
+
+-- this first part does the following:
+-- It combines customers with their transactions.
+-- For each customer, it adds up (SUM) all the money (t.amount) they spent/earned.
+-- The result is a list of customers with their total revenue.
+
 SELECT
   customer_id,
   name,
@@ -17,6 +23,16 @@ SELECT
 FROM cust_revenue
 ORDER BY total_revenue DESC;
 
--- Interpretation:
--- NTILE(4) divides customers into quartiles; the top quartile (4) are high-value customers to target with premium offers. 
--- CUME_DIST() gives the cumulative distribution percentile useful for selecting thresholds (e.g., top 20% customers for a loyalty program).
+-- this last part does the following:
+
+-- using NTILE(4):
+-- It Splits customers into 4 equal groups (quartiles) based on revenue.
+-- Quartile 1 = top 25% highest revenue, Quartile 4 = bottom 25%.
+
+-- using CUME_DIST():
+-- Calculates the cumulative distribution:
+-- For each customer, it shows what fraction of all customers have revenue greater than or equal to theirs.
+-- Values go from 0 < cume_dist ≤ 1.
+
+-- using ORDER BY: 
+-- Finally, it lists customers from highest to lowest total revenue.
