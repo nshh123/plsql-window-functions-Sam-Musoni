@@ -123,7 +123,7 @@ NTILE(4) divides customers into quartiles; the top quartile (4) are high-value c
 
 ### _See how this entire project was built from scratch in Vs Code_
 
-1. Creating local git repository: see [screenshot](screenshots/15-create%20local%20git%20repository%20before%20pushing.png)
+1. Creating local git repository: see [screenshot](https://github.com/nshh123/plsql-window-functions-Sam-Musoni/blob/main/screenshots/15-Create%20local%20git%20repository%20before%20pushing.png)
 2. Adding sql scripts, tracking and commiting changes: see [screenshot](screenshots/16-tracking%20changes%20and%20commits.png)
 3. Adding screenshots, tracking and commiting changes: see [screenshot](screenshots/17-added%20screenshots%20to%20local%20repository.png)
 4. Creating README.md: see [screenshot](screenshots/19-create%20README%20file.png)
