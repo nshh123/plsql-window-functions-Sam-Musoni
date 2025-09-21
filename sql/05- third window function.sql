@@ -35,3 +35,7 @@ ORDER BY region, month_start;
 -- If there’s no previous month (first row), set growth to NULL to avoid dividing by zero
 -- Otherwise: 
 -- Shows, for each region and month:
+--    .Sales total,
+--    .Previous month’s sales,
+--    .MoM % growth.
+-- Ordered by region, then time.
