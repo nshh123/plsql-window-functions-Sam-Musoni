@@ -130,6 +130,7 @@ NTILE(4) divides customers into quartiles; the top quartile (4) are high-value c
 5. Previewing README.md: see [screenshot](screenshots/20-previewing%20README%20in%20vscode.png)
 6. Creating GitHub repository: see [screenshot](screenshots/21-create%20GitHub%20repository.png)
 7. Pushing local git repository to GitHub: see [screenshot](screenshots/22-push%20git%20repository%20to%20GitHub.png)
+8. Final outlook: see [screenshot](https://github.com/nshh123/plsql-window-functions-Sam-Musoni/blob/main/screenshots/23-final%20project%20outlook.png)
 
 ---
 
