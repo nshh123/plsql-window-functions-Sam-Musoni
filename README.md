@@ -96,7 +96,7 @@ NTILE(4) divides customers into quartiles; the top quartile (4) are high-value c
 
 ---
 
-## Insights
+## Results Analysis
 
 ### Descriptive — What happened?
 
