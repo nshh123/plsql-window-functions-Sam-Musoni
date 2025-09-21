@@ -11,6 +11,12 @@ WITH region_month AS (
   JOIN customers c ON t.customer_id = c.customer_id
   GROUP BY c.region, TRUNC(t.sale_date,'MM')
 )
+-- this first part does the following:
+-- Groups sales data by region and month.
+-- Produces a table where each row shows:
+--     .region (e.g., North, South, East, West)
+--     .month_start (first day of each month, acts as the period)
+--     .region_month_total (total sales for that region in that month).
 SELECT
   region,
   month_start,
@@ -24,8 +30,8 @@ SELECT
   END AS mom_growth_pct
 FROM region_month
 ORDER BY region, month_start;
-
--- Interpretation:
--- LAG() exposes the previous month’s total so we can compute MoM growth readily. Some regions show 
--- large swings (e.g., Butare’s +546% in April) indicating one or two large ticket sales (e.g., Espresso Machine) 
--- created spikes — this should be investigated as either sales campaigns or one-off purchases.
+-- this last part does the following:
+-- Uses LAG() to fetch the previous month’s sales total for each region.
+-- If there’s no previous month (first row), set growth to NULL to avoid dividing by zero
+-- Otherwise: 
+-- Shows, for each region and month:
