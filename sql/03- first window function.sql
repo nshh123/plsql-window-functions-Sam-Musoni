@@ -21,4 +21,6 @@ ORDER BY c.region, cust_rev.total_revenue DESC;
 
 
 -- Interpretation:
--- ROW_NUMBER gives strict ordering (useful when selecting a single top customer). RANK and DENSE_RANK -- differ when ties are present — RANK() leaves gaps while DENSE_RANK() does not. PERCENT_RANK() maps -- ranks to [0,1], useful for relative percentile filtering.
+-- ROW_NUMBER gives strict ordering (useful when selecting a single top customer). 
+-- RANK and DENSE_RANK -- differ when ties are present — RANK() leaves gaps while DENSE_RANK() does not. 
+-- PERCENT_RANK() maps -- ranks to [0,1], useful for relative percentile filtering.
