@@ -20,7 +20,12 @@ JOIN (
 ORDER BY c.region, cust_rev.total_revenue DESC;
 
 
--- Interpretation:
--- ROW_NUMBER gives strict ordering (useful when selecting a single top customer). 
--- RANK and DENSE_RANK -- differ when ties are present — RANK() leaves gaps while DENSE_RANK() does not. 
--- PERCENT_RANK() maps -- ranks to [0,1], useful for relative percentile filtering.
+-- How it works:
+-- 1. Aggregates each customer’s total revenue from the transactions table.
+-- 2.Joins this with the customers table to get customer details (name, region).
+-- 3.Uses window functions to rank customers within their region:
+--        .ROW_NUMBER → unique sequence regardless of ties.
+--        .RANK → same rank for ties, but skips next number.
+--        .DENSE_RANK → same rank for ties, but no skipping.
+--        .PERCENT_RANK → percentile score (0 to 1) relative to peers.
+-- 4.Results are sorted by region, then revenue descending.
