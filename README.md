@@ -134,6 +134,12 @@ NTILE(4) divides customers into quartiles; the top quartile (4) are high-value c
 
 ---
 
+## Disclaimer
+
+This repository has been cloned nearly 40 times (see [screenshot](https://github.com/nshh123/plsql-window-functions-Sam-Musoni/blob/main/screenshots/24-Disclaimer%20for%20clones.png)). The Author takes no responsibility for any similarities found in other's projects as this is a public repository. 
+
+---
+
 ## References
 
 | Reference                                                                             | URL                                                                                                                      |
